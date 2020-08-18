@@ -4,7 +4,6 @@ Sunghun joung, Seungryong Kim, Hanjae Kim, Minsu Kim, Ig-jae Kim, Junghyun Cho, 
 
 CVPR 2020
 
-[Project Page](https://sunghunjoung.github.io/CCNs/)
 
 > Comming Soon
 
