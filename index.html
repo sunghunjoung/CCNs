@@ -1,0 +1,275 @@
+<style type="text/css">
+    body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight:300;
+        font-size:18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1100px;
+    }
+
+    h1 {
+        font-weight:300;
+    }
+
+    .disclaimerbox {
+        background-color: #eee;
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        padding: 20px;
+    }
+
+    video.header-vid {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.header-img {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.rounded {
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    a:link,a:visited
+    {
+        color: #1367a7;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #208799;
+    }
+
+    td.dl-link {
+        height: 160px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+                15px 15px 0 0px #fff, /* The fourth layer */
+                15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+                20px 20px 0 0px #fff, /* The fifth layer */
+                20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+                25px 25px 0 0px #fff, /* The fifth layer */
+                25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+        margin-left: 10px;
+        margin-right: 45px;
+    }
+
+
+    .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+
+    .vert-cent {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    hr
+    {
+        border: 0;
+        height: 1.5px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+</style>
+
+<html>
+  <head>
+        <title>CCNs</title>
+        <meta property="og:title" content="CCNs" />
+        <meta property="og:image" content="CCNs.jpg" />
+        <!-- #TODO -->
+        <!-- <meta property="og:url" content="https://www.youtube.com/watch?v=9-Ttb8jsevo" />  -->
+  </head>
+
+  <body>
+    <br>
+    <center>
+    <span style="font-size:42px">Cylindrical Convolutional Networks for Joint Object Detection and Viewpoint Estimation</span>
+
+    </center>
+
+    <br><br>
+      <table align=center width=800px>
+       <tr>
+         <td align=center width=100px>
+         <center>
+         <span style="font-size:20px">Sunghun Joung<sup>1</sup></a></span>
+         </center>
+         </td>
+
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:20px"><a href="https://seungryong.github.io/">Seungryong Kim<sup>2,3</sup></a></span>
+        </center>
+        </td>
+
+       <tr>
+         <td align=center width=100px>
+         <center>
+         <span style="font-size:20px">Hanjae Kim<sup>1</sup></a></span>
+         </center>
+         </td>
+
+       <tr>
+         <td align=center width=100px>
+         <center>
+         <span style="font-size:20px">Minsu Kim<sup>1</sup></a></span>
+         </center>
+         </td>
+
+       <tr>
+         <td align=center width=100px>
+         <center>
+         <span style="font-size:20px">Ig-Jae Kim<sup>4</sup></a></span>
+         </center>
+         </td>
+
+       <tr>
+         <td align=center width=100px>
+         <center>
+         <span style="font-size:20px">Junghyun Cho<sup>4</sup></a></span>
+         </center>
+         </td>
+
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:20px"><a href="http://diml.yonsei.ac.kr/">Kwanghoon Sohn<sup>1</sup></a></span>
+        </center>
+        </td>
+     </tr>
+    </table>
+
+    <table align=center width=700px>
+       <tr>
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:20px">Yonsei University<sup>1</sup>, École Polytechnique Fédérale de Lausanne<sup>2</sup>, Korea University<sup>3</sup>, Korea Institute of Science and Technology (KIST)<sup>4</sup></span>
+        </center>
+        </td>
+     </tr>
+    </table>
+
+    <br>
+    <table align=center width=500px>
+     <tr>
+       <td align=center width=200px>
+       <center>
+       <span style="font-size:20px"><a href="./CCNs_CVPR2020.pdf">[CVPR'20 paper]</a></span>
+       </center>
+       </td>
+
+       <td align=center width=200px>
+       <center>
+       <span style="font-size:20px"><a href="./CCNs_CVPR2020_slide.pdf">[CVPR'20 slide]</a></span>
+       </center>
+       </td>
+
+      <td align=center width=100px>
+      <center>
+      <span style="font-size:20px"><a href="https://github.com/sunghunjoung/CCNs/">[Code]</a></span>
+      </center>
+      </td>
+
+   </tr>
+  </table>
+
+            <br>
+            <br>
+            <table align=center>
+                <tr>
+                    <td width=600px>
+                      <center>
+                          <a href="CCNs.jpg"><img src = "CCNs.jpg" height="400px"></img></a><br>
+                    </center>
+                    </td>
+                </tr>
+                    <td width=600px>
+                      <center>
+                          <span style="font-size:14px"><i>Illustration of cylindrical convolutional networks (CCNs): Given a single image of objects, we apply a view-specific convolutional kernel to extract the shape characteristic of object from different viewpoints. </i>
+                    </center>
+                    </td>
+            </table>
+
+            <br><br>
+            Existing techniques to encode spatial invariance within deep convolutional neural networks only model 2D transformation fields. This does not account for the fact that objects in a 2D space are a projection of 3D ones, and thus they have limited ability to severe object viewpoint changes. To overcome this limitation, we introduce a learnable module, cylindrical convolutional networks (CCNs), that exploit cylindrical representation of a convolutional kernel defined in the 3D space. CCNs extract a view-specific feature through a view-specific convolutional kernel to predict object category scores at each viewpoint. With the view-specific feature, we simultaneously determine objective category and viewpoints using the proposed sinusoidal soft-argmax module. Our experiments demonstrate the effectiveness of the cylindrical convolutional networks on joint object detection and viewpoint estimation.
+            <br><br>
+          <hr>
+
+          <table align=center>
+           <center><h1>Paper</h1></center>
+              <tr>
+                <td><a href="./CCNs_CVPR2020.pdf"><img style="height:200px" src="LAF_paper.png"/></a></td>
+                <td><span style="font-size:14pt">&nbsp; &nbsp; Sunghun Joung, Seungryong Kim, Hanjae Kim, Minsu Kim, Ig-Jae Kim, Junghyun Cho, Kwanghoon Sohn<br><br>
+                  &nbsp; &nbsp; Cylindrical Convolutional Networks for Joint Object Detection and Viewpoint Estimation<br><br>
+                  &nbsp; &nbsp; CVPR, 2020<br><br>
+                  &nbsp; &nbsp; <a href="./CCNs_CVPR2020.pdf">[pdf]</a> &nbsp; &nbsp;
+                  &nbsp; &nbsp; <a href="./CCNs_bibtex.txt">[bibtex]</a>
+                </td>
+            </tr>
+          </table>
+        <br>
+        <hr>
+
+        <center><h1>Video</h1></center>
+        <table align=center>
+            <tr>
+                <td width=600px>
+                  <center>
+                    <div class = "video">
+                        <iframe width="840" height="472" src="https://www.youtube.com/watch?v=zHoYO8XOpsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   </div>
+                </center>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+
+        <table align=center width=1100px>
+            <tr>
+                <td>
+                  <left>
+            <center><h1>Acknowledgements</h1></center>
+            This research was supported by R\&D program for Advanced Integrated-intelligence for Identification (AIID) through the National Research Foundation of KOREA (NRF) funded by Ministry of Science and ICT (NRF-2018M3E3A1057289).
+            This webpage template was borrowed from some <a href="https://richzhang.github.io/colorization/">colorful folks</a>.
+        </left>
+        </td>
+        </tr>
+        </table>
+
+
+
+</body>
+</html>
